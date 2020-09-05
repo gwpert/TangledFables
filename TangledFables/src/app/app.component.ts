@@ -1,3 +1,5 @@
+import { User } from './services/user.model';
+import { AuthService } from './services/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TangledFables';
+
+
+  
+  constructor(public auth: AuthService) {
+
+  };
+
 }

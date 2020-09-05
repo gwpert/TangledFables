@@ -1,4 +1,11 @@
 
+<div *ngIf="auth.user$ | async as user; else login">
+  {{ user | json }}
+  <hr>
+  <button class="button" clieth="auth.signOut()">Sign Out</button>
+</div>
 
-<p>Katherine is stupid</p>
+<ng-template #login>
+  <button class="button" (click)="auth.googleSignIn()">Sign In</button>
+</ng-template>
 <router-outlet></router-outlet>
