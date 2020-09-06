@@ -1,0 +1,22 @@
+.content {
+    margin: 50px;
+}
+
+.book-content {
+    border :1px solid #ffffe6;
+    width: 125px;
+    height:  200px;
+    color: #ffffe6;
+    background: #111;
+    border-radius: 10px;
+    font-family: "Lucida Console", Monaco, monospace;
+    border: 1px solid #ffffe6;
+}
+
+.book-content:hover {
+    transition: border-color 3s ease; 
+    transition: box-shadow 1s ease;
+    border: 1px solid #7a00ff !important;
+    box-shadow: 1px 1px 30px #7a00ff;
+    cursor:pointer;
+}

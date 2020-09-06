@@ -1,0 +1,41 @@
+.content {
+    text-align: center;
+    margin: auto;
+    width: 1000px;
+}
+
+.header-text {
+    display : inline-flex;
+}
+
+.header-blinker {
+    animation: blinker 1s linear infinite;
+    font-weight: 900;
+    font-size: 10pt;
+    padding-left: 10px;
+    display : inline-flex;
+}
+
+
+.logout-button {
+    position: absolute;
+    float:right;
+    top: 20px;
+    right: 500px;
+
+    width: 80px;
+}
+
+.login-button:hover {
+    transition: border-color 3s ease; 
+    transition: box-shadow 3s ease;
+    border: 1px solid #7a00ff !important;
+    box-shadow: 1px 1px 2px #7a00ff;
+}
+
+  
+@keyframes blinker {
+    80% {
+        opacity: 0;
+    }
+}
